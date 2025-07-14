@@ -79,7 +79,7 @@ python3.13 mcp-s3-buckets.py (depending on how the virtual env was setup)
 
 [07/14/25 13:16:42] INFO     Starting MCP server 'Britive API MCP' with transport 'stdio'
 
-</pre>
+
 
 
 Open Claude, go to developer settings, edit config, and then open the claude_desktop_config.json file. You should see following 
@@ -90,13 +90,13 @@ Open Claude, go to developer settings, edit config, and then open the claude_des
       "command": "/Users/shahzadali/Library/CloudStorage/OneDrive-britive,Inc/Britive_Github/Agentic AI MCP S3 Access Tool/venv/bin/python",
       "args": ["/Users/shahzadali/Library/CloudStorage/OneDrive-britive,Inc/Britive_Github/Agentic AI MCP S3 Access Tool/mcp-s3-buckets.py"],
       "env": {
-        "BRITIVE_API_KEY": "fNZCdfhzR6j3v4FgYoI4VGOX417bdQTEHjltJL/wUWw="
+        "BRITIVE_API_KEY": "Your Key"
       }
     }
   }
 }
 
-
+</pre>
 
 Use the provided example, and customize file paths for Mac or PC.
 
