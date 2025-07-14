@@ -82,7 +82,8 @@ python3.13 mcp-s3-buckets.py (depending on how the virtual env was setup)
 
 
 
-Open Claude, go to developer settings, edit config, and then open the claude_desktop_config.json file. You should see following 
+Open Claude, go to developer settings, edit config, and then open the claude_desktop_config.json file. 
+You should see following 
 
 {
   "mcpServers": {
