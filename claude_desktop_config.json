@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "s3agent9": {
+      "command": "/Users/shahzadali/Library/CloudStorage/OneDrive-britive,Inc/Britive_Github/Agentic AI MCP S3 Access Tool/venv/bin/python",
+      "args": ["/Users/shahzadali/Library/CloudStorage/OneDrive-britive,Inc/Britive_Github/Agentic AI MCP S3 Access Tool/mcp-s3-buckets.py"],
+      "env": {
+        "BRITIVE_API_KEY": "Your Key"
+      }
+    }
+  }
+}
