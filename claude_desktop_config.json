@@ -1,11 +1,31 @@
 {
   "mcpServers": {
-    "s3agent9": {
-      "command": "/Users/shahzadali/Library/CloudStorage/OneDrive-britive,Inc/Britive_Github/Agentic AI MCP S3 Access Tool/venv/bin/python",
-      "args": ["/Users/shahzadali/Library/CloudStorage/OneDrive-britive,Inc/Britive_Github/Agentic AI MCP S3 Access Tool/mcp-s3-buckets.py"],
+    "britive": {
+      "command": "/Users/shahzadali/Library/CloudStorage/OneDrive-britive,Inc/Britive_Github/Britive_MCP_Server/venv/bin/python",
+      "args": [
+        "/Users/shahzadali/Library/CloudStorage/OneDrive-britive,Inc/Britive_Github/Britive_MCP_Server/britive_mcp_tools/core/mcp_runner.py"
+      ],
       "env": {
-        "BRITIVE_API_KEY": "Your Key"
+        "PYTHONPATH": "/Users/shahzadali/Library/CloudStorage/OneDrive-britive,Inc/Britive_Github/Britive_MCP_Server",
+        "BRITIVE_TENANT": "demo"
       }
+    },
+    "snowflake": {
+      "command": "uvx",
+      "args": [
+        "--python=3.12.2",
+		    "--with=pyOpenSSL==24.2.1",
+		    "--with=cryptography==43.0.1",
+		    "mcp_snowflake_server",
+        "--account", "<>",
+        "--user", "SALI",
+        "--password", "<password or key>",
+        "--warehouse","DEMO_COMPUTE_WH",
+        "--database", "SNOWFLAKE_SAMPLE_DATA",
+        "--schema", "<none selected>",
+		    "--role", "PUBLIC",
+        "--log_level", "DEBUG"
+      ]
     }
   }
 }
