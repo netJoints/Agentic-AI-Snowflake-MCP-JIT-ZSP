@@ -31,19 +31,22 @@ This project shows how to build a **production-ready agentic AI workflow** on **
 
 <img width="558" height="603" alt="image" src="https://github.com/user-attachments/assets/a2ab8191-0b69-4064-b47c-04d23e14744c" />
 
-
-## What you can do
-- Ask the agent to answer questions over **structured data** via **Cortex Analyst** (semantic models).
-- Retrieve insights from **unstructured content** via **Cortex Search** (RAG-style retrieval).
-- Run **multi-step plans** with **Cortex Agents**, choosing the right tool and reflecting on intermediate outputs.
-- Execute **scoped SQL** with server-side enforcement and audit, avoiding broad access.
+## Demo Recorded Video
+Watch the walkthrough and end-to-end flow in the **demo video**: https://youtu.be/j6x30dqqnYs
 
 ## Prerequisites
 - A Snowflake account with **Cortex** features enabled and roles to create/manage MCP server objects.
 - An **MCP client** (e.g., Claude Desktop) or a compatible agent runtime.
 - A **JIT/ZSP** broker (e.g., your enterprise access platform) capable of issuing short-lived credentials to Snowflake.
 
-## Setup (High level)
+## What can you do for your implementation
+- Ask the agent to answer questions over **structured data** via **Cortex Analyst** (semantic models).
+- Retrieve insights from **unstructured content** via **Cortex Search** (RAG-style retrieval).
+- Run **multi-step plans** with **Cortex Agents**, choosing the right tool and reflecting on intermediate outputs.
+- Execute **scoped SQL** with server-side enforcement and audit, avoiding broad access.
+
+
+## Potential Production Setup (High level)
 1. **Configure Snowflake MCP server**: register Cortex Search/Analyst/Agents services and (optionally) SQL/object tools in the server configuration.
 2. **Enable OAuth** between MCP client and server; avoid underscores in hostnames and prefer least-privileged roles.
 3. **Wire JIT/ZSP**: integrate the credential broker to mint **time-bound** Snowflake access per agent task; remove hard-coded tokens.
@@ -57,13 +60,6 @@ This project shows how to build a **production-ready agentic AI workflow** on **
 - **Zero Standing Privileges**: no permanent secrets; agents get **just-enough**, **just-in-time** access with full audit.
 - **Runtime enforcement** complements MCP: OAuth secures the channel, JIT/ZSP governs **what** the agent can do **right now**.
 
-## Demo Recorded Video
-Watch the walkthrough and end-to-end flow in the **demo video**: https://youtu.be/j6x30dqqnYs
-
-## Roadmap
-- Add automated **evaluation harness** for agent runs (quality & safety)
-- Publish sample **configuration.yaml** for Snowflake MCP services
-- Integrate **observability** with structured logs/traces for tool calls
 
 ## References
 - Snowflake Documentation — *Snowflake-managed MCP server (OAuth 2.1, RBAC, recommendations)*
