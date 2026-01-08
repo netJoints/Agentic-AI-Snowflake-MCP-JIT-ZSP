@@ -7,7 +7,7 @@ This project shows how to build a **production-ready agentic AI workflow** on **
 - **Snowflake MCP server** exposes these capabilities over a consistent interface to MCP clients (e.g., Claude Desktop), supporting SQL execution, object management, and semantic views.
 - **JIT/ZSP** authorization patterns remove hard-coded secrets and grant narrowly scoped, time-bound access for agent workflows—addressing key MCP runtime security gaps.
 
-## Architecture
+## Design Flow
 ```
 +---------------------------+         +-----------------------------------+
 | MCP Client (Agent UI)     |  --->   | Snowflake-managed MCP Server      |
