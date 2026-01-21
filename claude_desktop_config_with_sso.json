@@ -1,0 +1,36 @@
+{
+  "mcpServers": {
+    "britive": {
+      "command": "/Users/shahzadali/Library/CloudStorage/OneDrive-britive,Inc/Britive_Github/Britive_MCP_Server/venv/bin/python",
+      "args": [
+        "/Users/shahzadali/Library/CloudStorage/OneDrive-britive,Inc/Britive_Github/Britive_MCP_Server/britive_mcp_tools/core/mcp_runner.py"
+      ],
+      "env": {
+        "PYTHONPATH": "/Users/shahzadali/Library/CloudStorage/OneDrive-britive,Inc/Britive_Github/Britive_MCP_Server",
+        "BRITIVE_TENANT": "demo"
+      }
+    },
+    "snowflake": {
+      "command": "uvx",
+      "args": [
+        "--python=3.12.2",
+        "--with=pyOpenSSL==24.2.1",
+        "--with=cryptography==43.0.1",
+        "mcp_snowflake_server",
+        "--account", "JCAYKLZ-KYA90026",
+        "--user", "shahzad.ali@britive.com",
+        "--warehouse", "DEMO_COMPUTE_WH",
+        "--database", "SNOWFLAKE_SAMPLE_DATA",
+        "--schema", "PUBLIC",
+        "--role", "PUBLIC",
+        "--log_level", "DEBUG"
+      ],
+      "env": {
+        "SNOWFLAKE_AUTHENTICATOR": "externalbrowser"
+      }
+    }
+  },
+  "preferences": {
+    "chromeExtensionEnabled": false
+  }
+}
