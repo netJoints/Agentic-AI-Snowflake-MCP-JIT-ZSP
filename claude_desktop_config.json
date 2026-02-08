@@ -1,12 +1,12 @@
 {
   "mcpServers": {
     "britive": {
-      "command": "/Users/shahzadali/Library/CloudStorage/OneDrive-britive,Inc/Britive_Github/Britive_MCP_Server/venv/bin/python",
+      "command": "/Users/username/Library/CloudStorage/OneDrive-britive,Inc/Britive_Github/Britive_MCP_Server/venv/bin/python",
       "args": [
-        "/Users/shahzadali/Library/CloudStorage/OneDrive-britive,Inc/Britive_Github/Britive_MCP_Server/britive_mcp_tools/core/mcp_runner.py"
+        "/Users/username/Library/CloudStorage/OneDrive-britive,Inc/Britive_Github/Britive_MCP_Server/britive_mcp_tools/core/mcp_runner.py"
       ],
       "env": {
-        "PYTHONPATH": "/Users/shahzadali/Library/CloudStorage/OneDrive-britive,Inc/Britive_Github/Britive_MCP_Server",
+        "PYTHONPATH": "/Users/username/Library/CloudStorage/OneDrive-britive,Inc/Britive_Github/Britive_MCP_Server",
         "BRITIVE_TENANT": "demo"
       }
     },
@@ -18,7 +18,7 @@
 		    "--with=cryptography==43.0.1",
 		    "mcp_snowflake_server",
         "--account", "<>",
-        "--user", "SALI",
+        "--user", "username",
         "--password", "<password or key>",
         "--warehouse","DEMO_COMPUTE_WH",
         "--database", "SNOWFLAKE_SAMPLE_DATA",
