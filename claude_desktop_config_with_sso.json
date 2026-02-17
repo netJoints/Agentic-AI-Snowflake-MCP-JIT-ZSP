@@ -17,7 +17,7 @@
         "--with=pyOpenSSL==24.2.1",
         "--with=cryptography==43.0.1",
         "mcp_snowflake_server",
-        "--account", "JCAYKLZ-KYA90026",
+        "--account", "<snowflake-account>",
         "--user", "username@example.com",
         "--warehouse", "DEMO_COMPUTE_WH",
         "--database", "SNOWFLAKE_SAMPLE_DATA",
