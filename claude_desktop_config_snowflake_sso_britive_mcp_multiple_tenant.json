@@ -11,12 +11,12 @@
       }
     },
     "britive-tenant-2": {
-      "command": "/Users/shahzadali/Library/CloudStorage/OneDrive-britive,Inc/Britive_Github/Britive_MCP_Server/venv/bin/python",
+      "command": "/Users/shahzadali/Britive_MCP_Server/venv/bin/python",
       "args": [
-        "/Users/shahzadali/Library/CloudStorage/OneDrive-britive,Inc/Britive_Github/Britive_MCP_Server/britive_mcp_tools/core/mcp_runner.py"
+        "/Users/shahzadali/Britive_MCP_Server/britive_mcp_tools/core/mcp_runner.py"
       ],
       "env": {
-        "PYTHONPATH": "/Users/shahzadali/Library/CloudStorage/OneDrive-britive,Inc/Britive_Github/Britive_MCP_Server",
+        "PYTHONPATH": "/Users/shahzadali/Britive_MCP_Server",
         "BRITIVE_TENANT": "tenant-2"
       }
     },
@@ -28,7 +28,7 @@
         "--with=cryptography==43.0.1",
         "mcp_snowflake_server",
         "--account",
-        "JCAYKLZ-KYA90026",
+        "ABCDEFG-ABC12345",
         "--user",
         "shahzad.ali@britive.com",
         "--warehouse",
